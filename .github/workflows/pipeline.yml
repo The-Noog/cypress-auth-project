@@ -6,7 +6,7 @@ jobs:
     cypress-run:
         runs-on: ubuntu-latest
         steps: 
-            - name: clonar o projeto
+            - name: Clonar o projeto
               uses: actions/checkout@v4
             - name: Cypress run
               uses: cypress-io/github-action@v7
