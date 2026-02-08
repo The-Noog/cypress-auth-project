@@ -60,7 +60,7 @@ describe('Update booking', () => {
             body: {
                 "firstname": "Weslley Alterado",
                 "lastname": "Nogueira",
-                "totalprice": 7000,
+                "totalprice": 5000,
                 "depositpaid": true,
                 "bookingdates":
                 {
@@ -77,7 +77,7 @@ describe('Update booking', () => {
             }
         }).then((response) => {
             expect(response.status).to.equal(200)
-            expect(response.body.totalprice).to.equal(7000)
+            expect(response.body.totalprice).to.equal(5000)
 
         })
 
